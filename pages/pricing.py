@@ -8,7 +8,7 @@ import zibal.zibal as zibal
 import webbrowser
 st.set_page_config(page_title="profesearc/login page", page_icon=None, layout="wide", menu_items=None)
 # real_url = "http://localhost:8501/"
-real_url = "https://profesearch.streamlit.app/"
+real_url = "https://professearch.streamlit.app/"
 pay1 = "200000"
 pay2 = "500000"
 pay3 = "800000"

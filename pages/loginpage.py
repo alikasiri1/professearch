@@ -17,7 +17,7 @@ from langchain.prompts import (
 
 # from streamlit_chat import message
 # real_url = "http://localhost:8501/"
-real_url = "https://profesearch.streamlit.app/"
+real_url = "https://professearch.streamlit.app/"
 import streamlit.components.v1 as com
 # from zibal import zibal
 st.set_page_config(page_title="profesearc/login page",layout="wide", page_icon=None, menu_items=None , initial_sidebar_state="expanded") # layout="wide"

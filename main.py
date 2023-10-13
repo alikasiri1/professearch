@@ -21,7 +21,7 @@ import streamlit as st
 # from langchain.tools.json.tool import JsonSpec
 import streamlit.components.v1 as com
 # real_url = "http://localhost:8501/"
-real_url = "https://profesearch.streamlit.app/"
+real_url = "https://professearch.streamlit.app/"
 st.set_page_config(page_title="profesearch", page_icon=None, layout="wide", menu_items=None)#, initial_sidebar_state="collapsed"
 no_sidebar_style = """
     <style>

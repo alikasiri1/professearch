@@ -5,7 +5,7 @@ import streamlit as st
 import streamlit_authenticator as stauth
 import datetime
 # real_url = "http://localhost:8501/"
-real_url = "https://profesearch.streamlit.app/"
+real_url = "https://professearch.streamlit.app/"
 no_sidebar_style = """
     <style>
         section[data-testid="stSidebar"] {display: none;}
