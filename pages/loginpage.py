@@ -32,6 +32,7 @@ payments = []
 num_search=[]
 date_joined = []
 date_payment = []
+print(users)
 for user in users:
     print("-")
     emails.append(user['key'])
@@ -53,7 +54,7 @@ Authenticator = stauth.Authenticate(credentials , cookie_name='Streamlit', key='
 email, authentication_status, username = Authenticator.login(':green[Login]', 'main')
 stt = st.empty()
 stt2 = st.empty()
-stt.markdown(f"""<a href="{real_url}singup"   target = "_self">create acount</a> """ , unsafe_allow_html=True)
+stt.markdown(f"""<a href="{real_url}singup"   target = "_self" style="text-decoration: none;">create acount</a> """ , unsafe_allow_html=True)
 # st.markdown("""<a href="https://emailverify.streamlit.app/singup"   target = "_self">create acount</a> """ , unsafe_allow_html=True)
 # stt2.markdown(f"""<a href="{real_url}verify"   target = "_self">verify</a> """ , unsafe_allow_html=True)
 
@@ -488,7 +489,7 @@ if authentication_status:
             </head>
             <body>
                 <div>
-                    <a href="{real_url}pricing?{email}" target = "_self"  >Pricing</a></li>
+                    <a href="{real_url}pricing?{email}" target = "_blank"  >Pricing</a></li>
                 </div>
                 <h1 style="color: white;">Usage</h1>
                 <div class="progress-container">
@@ -541,8 +542,8 @@ if authentication_status:
 
     st.sidebar.markdown(usage_html,unsafe_allow_html=True)
     Authenticator.logout('Log Out', 'sidebar')
-    print(n_search)
-    print(payment)
+    print("n_search",n_search)
+    print("payment",payment)
     if "messages" not in st.session_state:
         st.session_state.messages = []
 

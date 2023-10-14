@@ -15,5 +15,5 @@ no_sidebar_style = """
 st.markdown(no_sidebar_style, unsafe_allow_html=True)
 sign_up()
 
-st.markdown(f"""<a href="{real_url}loginpage"   target = "_self">login</a> """ , unsafe_allow_html=True)
+st.markdown(f"""<a href="{real_url}loginpage"   target = "_self" style="text-decoration: none;">login</a> """ , unsafe_allow_html=True)
 

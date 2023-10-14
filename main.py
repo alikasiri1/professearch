@@ -1776,7 +1776,7 @@ main_html = f"""<!DOCTYPE html>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="{real_url}loginpage">login</a>
-              <a class="nav-link" href="{real_url}pricing?unknown?">Pricing</a>
+              <a class="nav-link" href="{real_url}pricing?unknown?" target = "_self">Pricing</a>
               <a class="nav-link disabled">about</a>
             </div>
           </div>
@@ -1789,11 +1789,11 @@ main_html = f"""<!DOCTYPE html>
             <h1 class="display-4 font-weight-bold">profesearch</h1>
             <p class="font-italic mb-0">Welcome to our website dedicated to providing information about computer engineering and computer science professors at the Universities of Canada.</p>
             <p>
-            <a href="{real_url}pricing?unknown?" class="text-white">
-                <u>pricing</u>
+            <a href="{real_url}pricing?unknown?" class="text-white" target = "_self" style="text-decoration: none;">
+                <u style="text-decoration: none;">pricing</u>
             </a>
             </p>
-            <a href="http://localhost:8501/loginpage" role="button" class="btn btn-primary px-5" >try free trial</a>
+            <a href="{real_url}loginpage" role="button" class="btn btn-primary px-5" >try free trial</a>
         </div>
       </div>
   </header>
@@ -1812,7 +1812,7 @@ main_html = f"""<!DOCTYPE html>
         <p>Just type your question and watch as our AI works its magic to provide you with the most relevant and up-to-date information available. We're your gateway to unlocking the vast world of computer science at the Universities of Canada.</p>
         <p>So, go ahead, start exploring, and feel free to ask us anything!</p>
         <div style="text-align: center;">
-        <a href="http://localhost:8501/loginpage" role="button" class="btn btn-primary px-5">try free trial</a>
+        <a href="{real_url}loginpage" role="button" class="btn btn-primary px-5">try free trial</a>
         </div>
     </section>
     </main>
@@ -1966,66 +1966,6 @@ def res_2(input):
 #         }
 # gpt = """Sure! Here is a list of professors specializing in machine learning along with their contact information, research interests, and website URLs:
 
-# 1. Dr. Sivan Sabato
-#    - University: McMaster University
-#    - Contact: Email: sabatos@mcmaster.ca, Office: ABB, C537
-#    - Research Interests: Interactive Machine Learning, Machine Learning Theory, Fairness in Machine Learning
-
-# 2. Ke Li, Assistant Professor
-#    - University: Simon Fraser University
-#    - Research Interests: Machine Learning, Computer Vision
-#    - Website: [http://www.sfu.ca/~keli/](http://www.sfu.ca/~keli/)
-
-# 3. Manolis Savva, Assistant Professor
-#    - University: Simon Fraser University
-#    - Research Interests: Computer Graphics, Computer Vision, Deep Learning
-#    - Website: [https://msavva.github.io/](https://msavva.github.io/)
-
-# 4. Marc G. Bellemare
-#    - University: McGill University (Google Brain)
-#    - Contact: Email: marc.g.bellemare@gmail.com
-#    - Research Interests: Machine Learning, Algorithms
-#    - Website: [http://www.marcgbellemare.info/](http://www.marcgbellemare.info/)
-
-# 5. Nicholas Vincent, Assistant Professor
-#    - University: Simon Fraser University
-#    - Contact: Email: nicholas_vincent@sfu.ca, Office: SFU Burnaby, TASC1 9207
-#    - Research Interests: Human-Computer Interaction, Artificial Intelligence, Machine Learning
-
-# 6. Mark Schmidt
-#    - University: University of British Columbia
-#    - Contact: Associate Professor, Email: schmidtm@cs.ubc.ca, Office: ICICS/CS 193, Phone: 604-822-6421 (Rarely answered; email preferred)
-#    - Research Interests: AI, Algorithms, CAIDA, DSI, MILD, ML (Machine Learning)
-#    - Website: [https://www.cs.ubc.ca/~schmidtm/](https://www.cs.ubc.ca/~schmidtm/)
-
-# 7. Nidhi Hegde
-#    - University: University of Alberta
-#    - Contact: Associate Professor, Email: nidhih@ualberta.ca
-#    - Research Interests: Probabilistic Modelling, Algorithmic Design of Machine Learning for Networked and Multi-Agent Systems, Inference under Bias and Privacy Constraints
-
-# 8. Nishant Mehta
-#    - University: University of Victoria
-#    - Contact: Office: ECS608, Email: nmehta@uvic.ca, Phone: 250-472-5798
-#    - Research Interests: Machine Learning Theory
-#    - Website: [http://web.uvic.ca/~nmehta/](http://web.uvic.ca/~nmehta/)
-
-# 9. Roozbeh Razavi-Far
-#    - University: University of New Brunswick
-#    - Contact: Assistant Professor, Email: roozbeh.razavi-far@unb.ca
-#    - Research Interests: Machine Learning, Learning in Non-Stationary Environments, Federated and Transfer Learning, Data Science, Big Data Analytics, Cybersecurity, Security and Safety of Cyber-Physical Systems, Artificial Intelligence, Dependable and Responsible AI Systems, Decision Making under Uncertainty, Quantum Machine Learning
-#    - Website: [https://www.lsclab.com/](https://www.lsclab.com/)
-
-# 10. Charles Ling
-#     - University: Western University
-#     - Contact: Middlesex College 374, Phone: (519) 661-3341, Email: cling@csd.uwo.ca
-#     - Research Interests: Data Mining and its Applications, Machine Learning, Cognitive Modeling
-#     - Website: [External link](https://www.csd.uwo.ca/~cling/)
-
-# 11. Frank Wood
-#     - University: University of British Columbia
-#     - Contact: Associate Professor, Email: fwood@cs.ubc.ca, Office: ICICS/CS X861, Phone: 604-827-3994
-#     - Research Interests: Artificial Intelligence, Machine Learning, Programming Languages
-#     - Website: [https://www.cs.ubc.ca/~fwood/](https://www.cs.ubc.ca/~fwood/)
 
 # Please note that some professors may not have provided their website URLs."""
 

@@ -72,7 +72,7 @@ if 'name' in st.session_state:
             update_user(st.session_state['name'], {"date_payment" : zb.postTo("inquiry" , data )["verifiedAt"]})
             # date_pae = str()
             st.success(zb.verify_result(verify_zibal["result"]))
-            st.markdown(f"""<a href="{real_url}loginpage"   target = "_self"> login</a> """ , unsafe_allow_html=True)
+            st.markdown(f"""<a href="{real_url}loginpage"   target = "_self" style="text-decoration: none;"> login</a> """ , unsafe_allow_html=True)
             #st.markdown("""<a href="https://emailverify.streamlit.app/table"   target = "_self"><button class="css-7ym5gk ef3psqc11"> login</button></a> """ , unsafe_allow_html=True)
         else:
             st.error(zb.verify_result(verify_zibal["result"]))
